@@ -1,0 +1,90 @@
+body {
+    background-color: #E5E5E5;
+    border: 15px solid #4E4B4B;
+}
+
+#logo {
+    position: relative;
+    top: -40px;
+    border: 1px solid black;
+    height: 100px;
+    padding: 10px;
+}
+
+button {
+    background: rgb(65, 64, 64);
+    border: 0;
+    padding: 10px;
+    width: 300px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    background: #777373;
+}
+
+.formulaire {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 550px;
+    justify-content: center;
+    border: 5px solid #4E4B4B;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: #ffff;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 1px 1px rgb(248 248 248 / 22%);
+}
+
+input {
+    border-radius: 3px;
+    height: 30px;
+    width: 300px;
+    border: none;
+    opacity: 0.5;
+    margin: 20px;
+    border-color: lightgrey;
+    border: solid 1px lightgrey;
+    background-color: #4E4B4B;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4E4B4B;
+    border: 1px solid black;
+}
+
+h1 {
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    vertical-align: middle
+}
+
+.formfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
