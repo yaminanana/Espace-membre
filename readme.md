@@ -51,3 +51,7 @@
 -Navigation : précédent/suivant.
 ##Statistiques :
 -Faire par centre d'interet/membres.
+
+##Lien vers le wireframe et la maquette:
+
+https://www.figma.com/file/F3zvbntP1AsdJZPdjN5w5G/poney-fringant?node-id=21%3A20
