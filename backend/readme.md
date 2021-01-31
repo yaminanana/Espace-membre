@@ -1,4 +1,5 @@
 ##Organisation du projet :
+
 [×]Analyse du cahier de charge.
 [×]Faire un wireframe par page du site.
 [×]Faire une maquette des trois pages .
@@ -6,23 +7,32 @@
 [×]Créer un repo sur github.
 
 ##Frontend :
+
+=>Accueil :
+[×]Faire le front.
+[×]Faire le responsive.
+
 =>Formulaires :
 [×]Faire la structure des différents formulaires.
 []Faire le responsive.
+
 =>Profil :
-[]Faire les pages liées au projet.
+[×]Faire les pages liées au projet.
 []Faire le responsive.
+
 =>Statistiques :
 [×]Faire la page correspondante.
 []Faire le responsive
+
 =>Header :
 [×]Faire la nav
-[]Faire menu Burger.
+[×]Faire menu Burger.
 =>Footer :
 [×]Faire la structure front.
-[]Faire le responsive.
+[×]Faire le responsive.
 
 ##Backend :
+
 =>Formulaires :
 [×]Création de la base de données.
 [×]Inscription + Hash du mot de passe.
@@ -30,6 +40,7 @@
 []Connexion avec numéro d'adhérent.
 [×]Création des cookies =>chekbox 'se souvenir de moi'.
 [×]Déconnexion.
+
 =>Profil :
 -Édition du profil.
 -Sélection des centres d'interets.

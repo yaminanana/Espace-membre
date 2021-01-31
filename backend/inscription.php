@@ -33,7 +33,7 @@ $message = "Votre pseudo n'est pas valide !";
     
 
         $message = "Inscription confirmée !";
-        header('Location: traitement.php');
+        
     }
 }
 
