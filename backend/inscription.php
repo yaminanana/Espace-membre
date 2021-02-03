@@ -1,5 +1,3 @@
-<?php include 'header.html';?>
-
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -33,7 +31,7 @@ $message = "Votre pseudo n'est pas valide !";
     
 
         $message = "Inscription confirmée !";
-        
+        header('Location:http://back.poneyfringant1.local:8084/profil.html');
     }
 }
 
@@ -42,7 +40,7 @@ $message = "Votre pseudo n'est pas valide !";
 
 
 
-    <h1>Le poney fringant</h1>
+    <!--<h1>Le poney fringant</h1>
     <img src="images/poney.png" alt="logo" id="logo" />
 
     <?php if(isset($message))echo $message; ?>
@@ -85,31 +83,8 @@ $message = "Votre pseudo n'est pas valide !";
         
  
     
-            <!--<form name="connexion" id="connexionForm" method="post" action="">
-                <h2>Connexion</h2>
-                <div class="formfield">
-
-
-
-                    <label for="pseudoconnexion"></label>
-                    <input placeholder="Pseudo*" type="text" name="pseudo" id="pseudoconnexion" required>
-                    <label for="email"></label>
-                    <input placeholder="Email" type="email" name="email" id="email">
-                    <label for="password"></label>
-                    <input placeholder="Mot de passe*" type="password" name="password" id="passwordconnexion" required>
-
-                </div>
-
-
-                <button type="submit" name="connexion" >Se connecter</button>
-
-            </form>
-            
-            
-
-        </div>-->
-
+          
 
 
     </body>
-    </html>
+    </html>-->

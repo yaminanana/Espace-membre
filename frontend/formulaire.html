@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Formulaire inscription</title>
+    <link rel="icon" type="image/png" href="./images/poney.png">
+</head>
+
+<body>
+    <header>
+
+        <nav id="navbar">
+            <img src="/images/poney.png" alt="logo" id="logo" />
+            <div class="search">
+                <input type="text" class="input" placeholder="Recherche...">
+                <button class="btn">
+                    <!--Rajouter l'icone recherche-->
+                </button>
+            </div>
+
+            <ul id="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formulaire.html">Identification</a></li>
+                <li><a href="profil.html">Votre profil</a></li>
+                <li><a href="Editprofil.html">Votre espace</a></li>
+                <li><a href="statistiques.html">Statistiques</a></li>
+            </ul>
+            <!--Ajout de la structure du menu burger-->
+            <div id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+
+        <h1>Le poney fringant</h1>
+        
+    
+        <?php if(isset($message))echo $message; ?>
+
+
+        <div class="formulaire">
+
+            <form name="inscription" id="inscriptionForm" method="post" action="http://back.poneyfringant1.local:8083/inscription.php">
+                <h2>Inscription</h2>
+                <div class="formfield">
+                    <div class="colonne1">
+                        <label for="prenom"></label>
+                        <input placeholder="Prénom*" type="text" name="prenom" id="prenom" maxlength="20" required>
+
+                        <label for="nom"></label>
+                        <input placeholder="Nom*" type="text" name="nom" id="nom" maxlength="20" required>
+
+                        <label for="pseudo"></label>
+                        <input placeholder="Pseudo*" type="text" name="pseudo" id="pseudo">
+
+                        <label for="password"></label>
+                        <input placeholder="Mot de passe*" type="password" name="password" id="password" maxlength="20"
+                            required>
+                    </div>
+                    <div class="colonne2">
+                        <label for="passwordconf"></label>
+                        <input placeholder="confirmer mot de passe*" type="password" name="passwordconf"
+                            id="passwordconf" maxlength="20" required>
+
+                        <label for="mail"></label>
+                        <input placeholder="Email*" type="text" name="mail" id="mail" maxlength="20" required>
+
+                        <label for="adherent"></label>
+                        <input placeholder="N°Adhérent*" type="text" name="adherent" id="adherent" required>
+                    </div>
+                </div>
+
+
+                <button type="submit" id="btninsc" name="inscription">S'inscrire</button>
+                <a href="./profil.html">Compléter votre profil</a>
+
+            </form>
+
+
+
+            <?php if(isset($message))echo $message; ?>
+            <form name="connexion" id="connexionForm" method="post" action="http://back.poneyfringant1.local:8083/connexion.php">
+                <h2>Connexion</h2>
+                <div class="formfield1" id="colonne3">
+
+
+
+                    <label for="pseudoconnexion"></label>
+                    <input placeholder="Pseudo*" type="text" name="pseudo" id="pseudoconnexion" required>
+                    <label for="email"></label>
+                    <input placeholder="Email" type="email" name="email" id="email">
+                    <label for="password"></label>
+                    <input placeholder="Mot de passe*" type="password" name="password" id="passwordconnexion"
+                        required>
+                        <label for="sesouvenir" class="souvenir">Se souvenir de moi</label>
+                        <input type="checkbox" name="sesouvenir" id="sesouvenir">
+                </div>
+
+
+                <button id="btnconnex" type="submit" name="connexion" >Se connecter</button>
+
+            </form>
+
+
+
+        </div>
+
+
+    </header>
+    <!--To do : amélioration du footer-->
+    <footer>
+        <span>2021 &copy; Poney fringant</span>
+        <section id="horaire">
+
+        </section>
+
+        <section id="contact">
+
+        </section>
+    </footer>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

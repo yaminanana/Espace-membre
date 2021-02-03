@@ -1,4 +1,3 @@
-<?php include 'header.html';?>
 <?php
 session_start();
 if(isset($_SESSION['id'])){
@@ -20,7 +19,7 @@ if(isset($_POST['envoyer'])){
 
 ?>
 
-<a href ="deconnexion.php">Se déconnecter</a>
+<!--<a href ="deconnexion.php">Se déconnecter</a>
 <a href ="Editprofil.php">Éditer mon profil</a>
 
 <body>
@@ -34,4 +33,4 @@ if(isset($_POST['envoyer'])){
 <div>
     <input type="submit" name="envoyer" value="Envoyer le fichier">
 </div>
-</form>
+</form>-->

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front poney</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" type="image/png" href="images/poney.png">
+</head>
+
+<body>
+    <header class="gradient">
+
+
+
+        <nav id="navbar">
+            <img src="/images/poney.png" alt="logo" id="logo" />
+            <div class="search">
+                <input type="text" class="input" placeholder="Recherche...">
+                <button class="btn">
+
+                </button>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formulaire.html">Identification</a></li>
+                <li><a href="profil.html">Votre profil</a></li>
+                <li><a href="Editprofil.html">Votre espace</a></li>
+                <li><a href="statistiques.html">Statistiques</a></li>
+            </ul>
+            <!--Ajout de la structure du menu burger-->
+            <div id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <h1>Le poney fringant</h1>
+        <h2>Bienvenue </h2>
+
+
+    <div class="formulaire">
+        <form name="inscription" id="profilForm" method="post">
+            <h2 id="titreprofil">Mon profil</h2>
+            <div class="formfield" id="colonne4">
+
+                <label for="adresse"></label>
+                <input placeholder="Adresse*" type="text" name="adresse1" id="adresse" required>
+
+                <label for="numero"></label>
+                <input placeholder="Numero*" type="text" name="numero" id="numero" required>
+
+                <label for="ville"></label>
+                <input placeholder="Ville*" type="text" name="ville" id="ville">
+
+                <label for="codepostal"></label>
+                <input placeholder="Code postal*" type="text" name="codepostal" id="codepostal" required>
+
+                <label for="dateadhesion"></label>
+                <input type="date" name="dateadhesion" id="dateadhesion" required>
+
+
+
+
+
+            </div>
+
+
+            <button type="submit" id="btnvalider" name="inscription">Je valide</button>
+            <a href="formulaire.html">je me connecte</a>
+
+        </form>
+        <a href ="deconnexion.php">Se déconnecter</a>
+<a href ="Editprofil.php">Éditer mon profil</a>
+
+
+
+    <form method="post" enctype="multipart/form-data">
+    <div>
+        Fichier : <input type="file" name="avatar">
+</div>
+<br>
+<div>
+    <input type="submit" name="envoyer" value="Envoyer le fichier">
+</div>
+</form>
+
+
+        <!--To do : amélioration du footer-->
+        <footer>
+            <span>2021 &copy; Poney fringant</span>
+            <section id="horaire">
+
+            </section>
+            <section id="contact">
+
+            </section>
+        </footer>
+        <script src="main.js">
+
+        </script>
+</body>
+
+</html>

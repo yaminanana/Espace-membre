@@ -1,4 +1,3 @@
-<?php include 'header.html';?>
 <?php
 
 //pour afficher les erreurs sur le navigateur, à utiliser qu'en phase de développement
@@ -42,7 +41,7 @@ if(!$resultat){
                 setcookie( $_COOKIE['password'], "");
             }
         }//On rédirige vers la page d'acceuil
-        header('location: index.php?error=1&id'.$resultat['adherentId']);
+        header('location: ./index.php?error=1&id'.$resultat['adherentId']);
     }
    
 }
@@ -51,7 +50,7 @@ if(!$resultat){
 
 ?>
 
-<h1>Le poney fringant</h1>
+<!--<h1>Le poney fringant</h1>
     <img src="images/poney.png" alt="logo" id="logo" />
 <?php if(isset($message))echo $message; ?>
 <form name="connexion" id="connexionForm" method="post" action="">
@@ -83,7 +82,7 @@ if(!$resultat){
 
 
     </body>
-    </html>
+    </html>-->
 
 
 
